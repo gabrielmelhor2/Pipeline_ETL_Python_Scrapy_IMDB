@@ -35,29 +35,30 @@ Extrair, tratar e armazenar informações das séries do IMDB, estruturando os d
 3. Instale as dependências:
   ```sh
   pip install scrapy
-
   pip install pandas
+  ```
 
 ## Execução
 
-1.Navegue até a pasta coleta:
-    cd coleta
+1. Navegue até a pasta coleta:
+  ```sh
+  cd coleta
+  ```
 
-  Execute o spider IMDB:
-        ```sh
-    scrapy crawl imdb -o ../data/data.jsonl
-    ```
-    
+2. Execute o spider IMDB:
+  ```sh
+  scrapy crawl imdb -o ../data/data.jsonl
+  ```
 
+3. Certifique-se de que o arquivo `data/data.jsonl` está presente com os dados das séries.
 
-2. Certifique-se de que o arquivo `data/data.jsonl` está presente com os dados das séries.
-
-3. Execute o script de transformação:
+4. Execute o script de transformação:
   ```sh
   cd src/transformation
   python app.py
   ```
-4. Os dados tratados serão salvos na tabela `imdb_top_tv` do banco SQLite em `data/database.db`.
+
+5. Os dados tratados serão salvos na tabela `imdb_top_tv` do banco SQLite em `data/database.db`.
 
 ## Transformações realizadas
 
