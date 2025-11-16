@@ -35,10 +35,8 @@ Extrair, tratar e armazenar informações das séries do IMDB, estruturando os d
 3. Instale as dependências:
   ```sh
   pip install scrapy
-  ```
-    ```sh
+
   pip install pandas
-  ```
 
 ## Execução
 
@@ -53,6 +51,7 @@ Extrair, tratar e armazenar informações das séries do IMDB, estruturando os d
 
 
 2. Certifique-se de que o arquivo `data/data.jsonl` está presente com os dados das séries.
+
 3. Execute o script de transformação:
   ```sh
   cd src/transformation
